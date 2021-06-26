@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llamea"
+version = "0.0.1"
+description = "llamea experiments"
+authors = ["George Laskaris <geo_lask777@yahoo.gr>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "llamea"}]
+include = ["data/*", "README.md", "llamea/tests/test_data/*"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+poetry = "^2.1.2"
+pytest = "^8.3.5"
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
